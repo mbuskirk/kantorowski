@@ -1,0 +1,3 @@
+/var/spool/pbs/mom_priv/jobs/4122876.pbs02.SC: line 24: export: `=': not a valid identifier
+/var/spool/pbs/mom_priv/jobs/4122876.pbs02.SC: line 24: export: `/local_scratch/pbs.4122876.pbs02': not a valid identifier
+Cgroup mem limit exceeded: 

@@ -1,0 +1,62 @@
+Traceback (most recent call last):
+  File "/home/maxbuskirk/.conda/envs/psifour/bin/psi4", line 333, in <module>
+    exec(content)
+  File "<string>", line 57, in <module>
+  File "/home/maxbuskirk/.conda/envs/psifour/lib//python3.9/site-packages/psi4/driver/driver.py", line 1339, in optimize
+    G, wfn = gradient(lowername, return_wfn=True, molecule=moleculeclone, **kwargs)
+  File "/home/maxbuskirk/.conda/envs/psifour/lib//python3.9/site-packages/psi4/driver/driver.py", line 739, in gradient
+    wfn = procedures['gradient'][lowername](lowername, molecule=molecule, **kwargs)
+  File "/home/maxbuskirk/.conda/envs/psifour/lib//python3.9/site-packages/psi4/driver/procrouting/proc.py", line 176, in select_mp2_gradient
+    return func(name, **kwargs)
+  File "/home/maxbuskirk/.conda/envs/psifour/lib//python3.9/site-packages/psi4/driver/procrouting/proc.py", line 2618, in run_dfmp2_gradient
+    ref_wfn = scf_helper(name, **kwargs)  # C1 certified
+  File "/home/maxbuskirk/.conda/envs/psifour/lib//python3.9/site-packages/psi4/driver/procrouting/proc.py", line 1513, in scf_helper
+    scf_wfn = scf_wavefunction_factory(name, base_wfn, core.get_option('SCF', 'REFERENCE'), **kwargs)
+  File "/home/maxbuskirk/.conda/envs/psifour/lib//python3.9/site-packages/psi4/driver/procrouting/proc.py", line 1186, in scf_wavefunction_factory
+    wfn = core.RHF(ref_wfn, superfunc)
+
+RuntimeError: 
+Fatal Error: RHF: RHF reference is only for singlets.
+Error occurred in file: /scratch/psilocaluser/conda-builds/psi4-multiout_1628027406310/work/psi4/src/psi4/libscf_solver/rhf.cc on line: 94
+The most recent 5 function calls were:
+
+
+
+Printing out the relevant lines from the Psithon --> Python processed input file:
+    core.set_global_option("BASIS", "cc-pVDZ")
+    core.set_global_option("REFERENCE", "rhf")
+    core.set_global_option("GEOM_MAXITER", 400)
+    mol.update_geometry()
+    mol.symmetrize(1e-3)
+--> e, wfn = optimize('mp2', return_wfn=True)
+    oeprop(wfn, "MULLIKEN_CHARGES")
+    mol.print_out()
+    print_variables()
+
+
+!----------------------------------------------------------------------------------!
+!                                                                                  !
+! Fatal Error: RHF: RHF reference is only for singlets.                            !
+! Error occurred in file: /scratch/psilocaluser/conda-                             !
+!     builds/psi4-multiout_1628027406310/work/psi4/src/psi4/libscf_solver/rhf.cc   !
+!     on line: 94                                                                  !
+! The most recent 5 function calls were:                                           !
+!                                                                                  !
+!----------------------------------------------------------------------------------!
+
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=12gb,walltime=10:00:00,ncpus=10
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=00:00:02,mem=1904340kb,walltime=00:00:08,ncpus=10,cpupercent=0,vmem=20924kb
+ 
+ 

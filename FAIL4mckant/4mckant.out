@@ -1,0 +1,50 @@
+ 157 displacements needed.
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157
+Warning: thermodynamics relations excluded imaginary frequencies: ['2145.5975i' '2050.3778i' '123.4756i' '63.6332i' '37.0151i' '31.9150i']
+Warning: used thermodynamics relations inappropriate for low-frequency modes: ['77.4310' '79.8049' '174.0592' '239.5875' '302.6976' '311.2686'
+ '392.6705' '405.5104' '488.3504' '515.6347' '549.9472' '601.5464'
+ '615.7219']
+Optimizer: Optimization failed!
+Traceback (most recent call last):
+  File "/home/maxbuskirk/.conda/envs/psifour/bin/psi4", line 333, in <module>
+    exec(content)
+  File "<string>", line 60, in <module>
+  File "/home/maxbuskirk/.conda/envs/psifour/lib//python3.9/site-packages/psi4/driver/driver.py", line 1433, in optimize
+    raise OptimizationConvergenceError("""geometry optimization""", n - 1, wfn)
+
+psi4.driver.p4util.exceptions.OptimizationConvergenceError: Could not converge geometry optimization in 132 iterations.
+
+Printing out the relevant lines from the Psithon --> Python processed input file:
+    core.set_global_option("GEOM_MAXITER", 400)
+    core.set_global_option("FULL_HESS_EVERY", 0)
+    core.set_local_option("OPTKING", "FROZEN_BEND", "(""		23 2 1 23 1 2 2 23 1	"")")
+    mol.update_geometry()
+    mol.symmetrize(1e-3)
+--> e, wfn = optimize('mp2', return_wfn=True)
+    oeprop(wfn, "MULLIKEN_CHARGES")
+    mol.print_out()
+    print_variables()
+
+
+!--------------------------------------------------------------!
+!                                                              !
+!  Could not converge geometry optimization in 132 iterations. !
+!                                                              !
+!--------------------------------------------------------------!
+
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=12gb,walltime=10:00:00,ncpus=10
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=05:00:17,mem=4079924kb,walltime=05:01:33,ncpus=10,cpupercent=98,vmem=4537968kb
+ 
+ 

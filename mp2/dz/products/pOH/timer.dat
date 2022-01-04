@@ -1,0 +1,197 @@
+
+Host: skystd25.palmetto.clemson.edu
+
+Timers On : Sat Dec 11 17:32:32 2021
+Timers Off: Sat Dec 11 17:40:20 2021
+
+Wall Time:      468.46 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+DFH: sparsity prep                  :      4.000u      0.017s      2.420w     10 calls
+Libint2ERI::Libint2ERI              :     11.283u      0.017s      6.807w     85 calls
+JK: (A|mn)                          :     39.850u      0.000s     23.959w     10 calls
+JK: (A|Q)^-1/2                      :      9.667u      0.083s      5.872w     10 calls
+JK: (Q|mn)                          :     21.717u      0.017s     13.065w     10 calls
+HF: Form core H                     :      2.250u      0.000s      1.360w      5 calls
+HF: Form S/X                        :      0.083u      0.000s      0.055w      5 calls
+HF: Guess                           :      0.083u      0.017s      0.060w      5 calls
+SAD Guess                           :      0.083u      0.017s      0.057w      1 calls
+HF: Form G                          :    101.950u      2.850s     63.138w     80 calls
+JK: D                               :      0.050u      0.000s      0.036w    160 calls
+JK: USO2AO                          :      0.033u      0.000s      0.018w    160 calls
+JK: JK                              :    289.933u      6.850s    178.633w    160 calls
+JK: J                               :     13.250u      0.017s      7.946w    325 calls
+JK: J1                              :      6.633u      0.000s      3.924w    350 calls
+JK: J2                              :      6.433u      0.017s      3.926w    350 calls
+JK: K                               :    275.033u      0.217s    165.765w    325 calls
+JK: K1                              :    235.067u      0.183s    141.684w    490 calls
+JK: K2                              :     39.900u      0.033s     24.050w    350 calls
+JK: AO2USO                          :      0.000u      0.000s      0.000w    160 calls
+HF: Form F                          :      0.000u      0.000s      0.021w     80 calls
+HF: Form D                          :      0.033u      0.000s      0.013w     80 calls
+HF: DIIS                            :      0.733u      0.200s      0.466w     79 calls
+DIISManager::add_entry              :      0.133u      0.050s      0.042w     75 calls
+DIISManager::extrapolate            :      0.133u      0.117s      0.174w     75 calls
+bMatrix setup                       :      0.050u      0.050s      0.086w     75 calls
+bMatrix pseudoinverse               :      0.000u      0.000s      0.006w     75 calls
+New vector                          :      0.083u      0.067s      0.082w     75 calls
+HF: Form C                          :      1.200u      0.000s      0.758w     79 calls
+DFMP2 Singles                       :      0.017u      0.000s      0.006w      5 calls
+DFMP2 Aia                           :     27.383u      1.033s     17.371w      5 calls
+DFMP2 (A|mn)                        :     24.300u      0.000s     14.630w     10 calls
+DFMP2 (A|mn)C_mi                    :      0.867u      0.000s      0.501w     10 calls
+DFMP2 (A|mi)C_na                    :      0.633u      0.000s      0.391w     10 calls
+DFMP2 Aia Write                     :      0.017u      0.183s      0.129w     10 calls
+DFMP2 iaB                           :      5.933u      1.117s      4.265w      5 calls
+DFMP2 Metric                        :      2.117u      0.017s      1.305w      5 calls
+DFMP2 Aia Read                      :      0.017u      0.117s      0.089w      5 calls
+DFMP2 (ia|A)(A|Q)                   :      1.850u      0.000s      1.128w      5 calls
+DFMP2 Bia Write                     :      0.000u      0.217s      0.122w      5 calls
+DFMP2 Bia Read                      :      0.050u      0.467s      0.394w     65 calls
+DFMP2 (ia|B)(B|Q)                   :      1.833u      0.000s      1.100w      5 calls
+DFMP2 Cia Write                     :      0.000u      0.200s      0.126w      5 calls
+DFMP2 aiB                           :      0.067u      0.533s      0.373w      5 calls
+DFMP2 Tij                           :     49.167u      1.650s     30.582w      5 calls
+DFMP2 Cia Read                      :      0.017u      0.583s      0.332w     50 calls
+DFMP2 I                             :     37.050u      0.050s     22.327w     65 calls
+DFMP2 T2                            :      9.183u      0.000s      5.541w     65 calls
+DFMP2 G                             :     18.967u      0.000s     11.381w     45 calls
+DFMP2 Pab                           :      6.550u      0.000s      3.914w     45 calls
+DFMP2 Gia Write                     :      0.000u      0.200s      0.133w     15 calls
+DFMP2 Tab                           :     27.300u      0.967s     17.020w      5 calls
+DFMP2 Bai Read                      :      0.000u      0.150s      0.085w     10 calls
+DFMP2 Qai Read                      :      0.133u      0.117s      0.155w     20 calls
+DFMP2 Pij                           :      2.050u      0.000s      1.246w     20 calls
+DFMP2 gamma                         :      2.000u      0.500s      1.513w      5 calls
+DFMP2 Gia Read                      :      0.000u      0.300s      0.174w     10 calls
+DFMP2 g                             :      1.950u      0.000s      1.167w      5 calls
+DFMP2 Gia                           :      0.283u      0.733s      0.603w      5 calls
+DFMP2 aiG Write                     :      0.000u      0.183s      0.104w      5 calls
+DFMP2 AB^x                          :      0.567u      0.000s      0.339w      5 calls
+DFMP2 Amn^x                         :     68.250u      0.917s     41.642w      5 calls
+DFMP2 L                             :     32.067u      0.850s     19.801w      5 calls
+DFMP2 P                             :      0.000u      0.000s      0.006w      5 calls
+DFMP2 W                             :      0.017u      0.000s      0.010w      5 calls
+DFMP2 Z                             :    230.700u      4.583s    141.639w      5 calls
+DFMP2 grad                          :    159.000u      3.717s     97.967w      5 calls
+Grad: V T Perturb                   :     10.467u      0.000s      6.295w      5 calls
+Grad: S                             :      0.067u      0.000s      0.046w      5 calls
+Grad: JK                            :    148.317u      3.717s     91.538w      5 calls
+CorrGrad: Amn                       :     37.667u      1.183s     23.385w      5 calls
+CorrGrad: AB                        :      9.517u      0.883s      6.259w      5 calls
+CorrGrad: UV                        :      3.950u      0.783s      2.871w      5 calls
+CorrGrad: ABx                       :      1.083u      0.033s      0.663w      5 calls
+CorrGrad: Amnx                      :     96.100u      0.783s     58.308w      5 calls
+
+--------------------------------------------------------------------------------------
+DFH: sparsity prep                  :      2.317u      0.017s      1.416w      5 calls
+| Libint2ERI::Libint2ERI            :      1.500u      0.017s      0.922w      5 calls
+Libint2ERI::Libint2ERI              :      3.033u      0.000s      1.832w     10 calls
+JK: (A|mn)                          :     17.133u      0.000s     10.296w      5 calls
+JK: (A|Q)^-1/2                      :      4.867u      0.050s      2.968w      5 calls
+| Libint2ERI::Libint2ERI            :      0.000u      0.000s      0.001w      5 calls
+JK: (Q|mn)                          :     10.467u      0.017s      6.290w      5 calls
+HF: Form core H                     :      2.250u      0.000s      1.360w      5 calls
+HF: Form S/X                        :      0.083u      0.000s      0.055w      5 calls
+HF: Guess                           :      0.083u      0.017s      0.060w      5 calls
+| SAD Guess                         :      0.083u      0.017s      0.057w      1 calls
+HF: Form G                          :    101.950u      2.850s     63.138w     80 calls
+| JK: D                             :      0.017u      0.000s      0.017w     80 calls
+| JK: USO2AO                        :      0.017u      0.000s      0.009w     80 calls
+| JK: JK                            :    101.900u      2.850s     63.079w     80 calls
+| | JK: J                           :      5.783u      0.000s      3.482w    160 calls
+| | | JK: J1                        :      2.883u      0.000s      1.729w    160 calls
+| | | JK: J2                        :      2.850u      0.000s      1.708w    160 calls
+| | JK: K                           :     95.417u      0.200s     57.612w    160 calls
+| | | JK: K1                        :     79.383u      0.183s     47.951w    160 calls
+| | | JK: K2                        :     16.000u      0.017s      9.646w    160 calls
+| JK: AO2USO                        :      0.000u      0.000s      0.000w     80 calls
+HF: Form F                          :      0.000u      0.000s      0.021w     80 calls
+HF: Form D                          :      0.033u      0.000s      0.013w     80 calls
+HF: DIIS                            :      0.733u      0.200s      0.466w     79 calls
+| DIISManager::add_entry            :      0.133u      0.050s      0.042w     75 calls
+| DIISManager::extrapolate          :      0.133u      0.117s      0.174w     75 calls
+| | bMatrix setup                   :      0.050u      0.050s      0.086w     75 calls
+| | bMatrix pseudoinverse           :      0.000u      0.000s      0.006w     75 calls
+| | New vector                      :      0.083u      0.067s      0.082w     75 calls
+HF: Form C                          :      1.200u      0.000s      0.758w     79 calls
+DFMP2 Singles                       :      0.017u      0.000s      0.006w      5 calls
+DFMP2 Aia                           :     27.383u      1.033s     17.371w      5 calls
+| Libint2ERI::Libint2ERI            :      0.867u      0.000s      0.517w      5 calls
+| DFMP2 (A|mn)                      :     24.300u      0.000s     14.630w     10 calls
+| DFMP2 (A|mn)C_mi                  :      0.867u      0.000s      0.501w     10 calls
+| DFMP2 (A|mi)C_na                  :      0.633u      0.000s      0.391w     10 calls
+| DFMP2 Aia Write                   :      0.017u      0.183s      0.129w     10 calls
+DFMP2 iaB                           :      5.933u      1.117s      4.265w      5 calls
+| DFMP2 Metric                      :      2.117u      0.017s      1.305w      5 calls
+| | Libint2ERI::Libint2ERI          :      0.000u      0.000s      0.001w      5 calls
+| DFMP2 Aia Read                    :      0.017u      0.117s      0.089w      5 calls
+| DFMP2 (ia|A)(A|Q)                 :      1.850u      0.000s      1.128w      5 calls
+| DFMP2 Bia Write                   :      0.000u      0.217s      0.122w      5 calls
+| DFMP2 Bia Read                    :      0.000u      0.133s      0.080w      5 calls
+| DFMP2 (ia|B)(B|Q)                 :      1.833u      0.000s      1.100w      5 calls
+| DFMP2 Cia Write                   :      0.000u      0.200s      0.126w      5 calls
+DFMP2 aiB                           :      0.067u      0.533s      0.373w      5 calls
+DFMP2 Tij                           :     49.167u      1.650s     30.582w      5 calls
+| DFMP2 Bia Read                    :      0.050u      0.333s      0.314w     60 calls
+| DFMP2 Cia Read                    :      0.017u      0.450s      0.250w     45 calls
+| DFMP2 I                           :     18.617u      0.033s     11.233w     45 calls
+| DFMP2 T2                          :      4.517u      0.000s      2.725w     45 calls
+| DFMP2 G                           :     18.967u      0.000s     11.381w     45 calls
+| DFMP2 Pab                         :      6.550u      0.000s      3.914w     45 calls
+| DFMP2 Gia Write                   :      0.000u      0.200s      0.133w     15 calls
+DFMP2 Tab                           :     27.300u      0.967s     17.020w      5 calls
+| DFMP2 Bai Read                    :      0.000u      0.150s      0.085w     10 calls
+| DFMP2 Qai Read                    :      0.133u      0.117s      0.155w     20 calls
+| DFMP2 I                           :     18.433u      0.017s     11.094w     20 calls
+| DFMP2 T2                          :      4.667u      0.000s      2.816w     20 calls
+| DFMP2 Pij                         :      2.050u      0.000s      1.246w     20 calls
+DFMP2 gamma                         :      2.000u      0.500s      1.513w      5 calls
+| DFMP2 Gia Read                    :      0.000u      0.150s      0.084w      5 calls
+| DFMP2 Cia Read                    :      0.000u      0.133s      0.081w      5 calls
+| DFMP2 g                           :      1.950u      0.000s      1.167w      5 calls
+DFMP2 Gia                           :      0.283u      0.733s      0.603w      5 calls
+| DFMP2 Gia Read                    :      0.000u      0.150s      0.090w      5 calls
+| DFMP2 aiG Write                   :      0.000u      0.183s      0.104w      5 calls
+DFMP2 AB^x                          :      0.567u      0.000s      0.339w      5 calls
+| Libint2ERI::Libint2ERI            :      0.017u      0.000s      0.001w      5 calls
+DFMP2 Amn^x                         :     68.250u      0.917s     41.642w      5 calls
+| Libint2ERI::Libint2ERI            :      0.833u      0.000s      0.502w      5 calls
+DFMP2 L                             :     32.067u      0.850s     19.801w      5 calls
+| Libint2ERI::Libint2ERI            :      0.817u      0.000s      0.494w      5 calls
+DFMP2 P                             :      0.000u      0.000s      0.006w      5 calls
+DFMP2 W                             :      0.017u      0.000s      0.010w      5 calls
+DFMP2 Z                             :    230.700u      4.583s    141.639w      5 calls
+| DFH: sparsity prep                :      1.683u      0.000s      1.005w      5 calls
+| | Libint2ERI::Libint2ERI          :      0.867u      0.000s      0.525w      5 calls
+| Libint2ERI::Libint2ERI            :      1.650u      0.000s      0.990w     10 calls
+| JK: (A|mn)                        :     22.717u      0.000s     13.662w      5 calls
+| JK: (A|Q)^-1/2                    :      4.800u      0.033s      2.904w      5 calls
+| | Libint2ERI::Libint2ERI          :      0.000u      0.000s      0.001w      5 calls
+| JK: (Q|mn)                        :     11.250u      0.000s      6.774w      5 calls
+| JK: D                             :      0.033u      0.000s      0.019w     80 calls
+| JK: USO2AO                        :      0.017u      0.000s      0.009w     80 calls
+| JK: JK                            :    188.033u      4.000s    115.554w     80 calls
+| | JK: J                           :      7.467u      0.017s      4.464w    165 calls
+| | | JK: J1                        :      3.750u      0.000s      2.195w    190 calls
+| | | JK: J2                        :      3.583u      0.017s      2.217w    190 calls
+| | JK: K                           :    179.617u      0.017s    108.153w    165 calls
+| | | JK: K1                        :    155.683u      0.000s     93.734w    330 calls
+| | | JK: K2                        :     23.900u      0.017s     14.404w    190 calls
+| JK: AO2USO                        :      0.000u      0.000s      0.000w     80 calls
+DFMP2 grad                          :    159.000u      3.717s     97.967w      5 calls
+| Grad: V T Perturb                 :     10.467u      0.000s      6.295w      5 calls
+| Grad: S                           :      0.067u      0.000s      0.046w      5 calls
+| Grad: JK                          :    148.317u      3.717s     91.538w      5 calls
+| | CorrGrad: Amn                   :     37.667u      1.183s     23.385w      5 calls
+| | | Libint2ERI::Libint2ERI        :      0.850u      0.000s      0.513w      5 calls
+| | CorrGrad: AB                    :      9.517u      0.883s      6.259w      5 calls
+| | | Libint2ERI::Libint2ERI        :      0.000u      0.000s      0.001w      5 calls
+| | CorrGrad: UV                    :      3.950u      0.783s      2.871w      5 calls
+| | CorrGrad: ABx                   :      1.083u      0.033s      0.663w      5 calls
+| | | Libint2ERI::Libint2ERI        :      0.000u      0.000s      0.001w      5 calls
+| | CorrGrad: Amnx                  :     96.100u      0.783s     58.308w      5 calls
+| | | Libint2ERI::Libint2ERI        :      0.850u      0.000s      0.506w      5 calls
+
+**************************************************************************************

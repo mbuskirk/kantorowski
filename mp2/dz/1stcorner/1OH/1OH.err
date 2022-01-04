@@ -1,0 +1,2 @@
+/var/spool/pbs/mom_priv/jobs/4012806.pbs02.SC: line 23: export: `=': not a valid identifier
+/var/spool/pbs/mom_priv/jobs/4012806.pbs02.SC: line 23: export: `/local_scratch/pbs.4012806.pbs02': not a valid identifier
