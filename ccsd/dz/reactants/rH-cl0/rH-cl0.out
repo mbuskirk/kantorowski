@@ -32,8 +32,8 @@
 
     Psi4 started on: Wednesday, 05 January 2022 01:27AM
 
-    Process ID: 1711057
-    Host:       skystd01.palmetto.clemson.edu
+    Process ID: 2895361
+    Host:       skystd03.palmetto.clemson.edu
     PSIDATADIR: /home/maxbuskirk/.conda/envs/psifour/share/psi4
     Memory:     500.0 MiB
     Threads:    1
@@ -74,6 +74,7 @@ H 1.08828700 1.79961000 0.52491500
 set scf_type df
 set basis cc-pVDZ
 set reference rhf
+set cachelevel 0
 
 mol.update_geometry()
 mol.symmetrize(1e-3)
@@ -84,11 +85,11 @@ mol.print_out()
 print_variables()
 --------------------------------------------------------------------------
 
-Scratch directory: /local_scratch/pbs.4327401.pbs02/
+Scratch directory: /local_scratch/pbs.4327402.pbs02/
 gradient() will perform analytic gradient computation.
 
-*** tstart() called on skystd01.palmetto.clemson.edu
-*** at Wed Jan  5 01:27:54 2022
+*** tstart() called on skystd03.palmetto.clemson.edu
+*** at Wed Jan  5 01:28:03 2022
 
    => Loading Basis Set <=
 
@@ -230,23 +231,23 @@ gradient() will perform analytic gradient computation.
                            Total Energy        Delta E     RMS |[F,P]|
 
    @DF-RHF iter SAD:  -462.99075645441980   -4.62991e+02   0.00000e+00 
-   @DF-RHF iter   1:  -462.28571460107014    7.05042e-01   2.59677e-03 DIIS
-   @DF-RHF iter   2:  -462.50715743073329   -2.21443e-01   1.21011e-03 DIIS
-   @DF-RHF iter   3:  -462.55080897444509   -4.36515e-02   2.68881e-04 DIIS
-   @DF-RHF iter   4:  -462.55404039128098   -3.23142e-03   8.51334e-05 DIIS
-   @DF-RHF iter   5:  -462.55427584783433   -2.35457e-04   2.14207e-05 DIIS
-   @DF-RHF iter   6:  -462.55429352338803   -1.76756e-05   5.16394e-06 DIIS
-   @DF-RHF iter   7:  -462.55429469900395   -1.17562e-06   1.76417e-06 DIIS
-   @DF-RHF iter   8:  -462.55429483019384   -1.31190e-07   3.96162e-07 DIIS
-   @DF-RHF iter   9:  -462.55429484315152   -1.29577e-08   1.51001e-07 DIIS
-   @DF-RHF iter  10:  -462.55429484515417   -2.00265e-09   6.94856e-08 DIIS
-   @DF-RHF iter  11:  -462.55429484575268   -5.98504e-10   3.09629e-08 DIIS
-   @DF-RHF iter  12:  -462.55429484588882   -1.36140e-10   1.35228e-08 DIIS
-   @DF-RHF iter  13:  -462.55429484591070   -2.18847e-11   4.91965e-09 DIIS
-   @DF-RHF iter  14:  -462.55429484591258   -1.87583e-12   1.46669e-09 DIIS
-   @DF-RHF iter  15:  -462.55429484591451   -1.93268e-12   4.28708e-10 DIIS
-   @DF-RHF iter  16:  -462.55429484591360    9.09495e-13   1.52644e-10 DIIS
-   @DF-RHF iter  17:  -462.55429484591315    4.54747e-13   6.46951e-11 DIIS
+   @DF-RHF iter   1:  -462.28571460106872    7.05042e-01   2.59677e-03 DIIS
+   @DF-RHF iter   2:  -462.50715743073386   -2.21443e-01   1.21011e-03 DIIS
+   @DF-RHF iter   3:  -462.55080897444554   -4.36515e-02   2.68881e-04 DIIS
+   @DF-RHF iter   4:  -462.55404039128075   -3.23142e-03   8.51334e-05 DIIS
+   @DF-RHF iter   5:  -462.55427584783337   -2.35457e-04   2.14207e-05 DIIS
+   @DF-RHF iter   6:  -462.55429352338751   -1.76756e-05   5.16394e-06 DIIS
+   @DF-RHF iter   7:  -462.55429469900372   -1.17562e-06   1.76417e-06 DIIS
+   @DF-RHF iter   8:  -462.55429483019293   -1.31189e-07   3.96162e-07 DIIS
+   @DF-RHF iter   9:  -462.55429484315187   -1.29589e-08   1.51001e-07 DIIS
+   @DF-RHF iter  10:  -462.55429484515253   -2.00066e-09   6.94856e-08 DIIS
+   @DF-RHF iter  11:  -462.55429484575194   -5.99414e-10   3.09629e-08 DIIS
+   @DF-RHF iter  12:  -462.55429484588763   -1.35685e-10   1.35228e-08 DIIS
+   @DF-RHF iter  13:  -462.55429484591042   -2.27942e-11   4.91965e-09 DIIS
+   @DF-RHF iter  14:  -462.55429484591247   -2.04636e-12   1.46669e-09 DIIS
+   @DF-RHF iter  15:  -462.55429484591366   -1.19371e-12   4.28708e-10 DIIS
+   @DF-RHF iter  16:  -462.55429484591269    9.66338e-13   1.52644e-10 DIIS
+   @DF-RHF iter  17:  -462.55429484591320   -5.11591e-13   6.46951e-11 DIIS
   Energy and wave function converged.
 
 
@@ -345,14 +346,14 @@ gradient() will perform analytic gradient computation.
               A 
     DOCC [    43 ]
 
-  @DF-RHF Final Energy:  -462.55429484591315
+  @DF-RHF Final Energy:  -462.55429484591320
 
    => Energetics <=
 
     Nuclear Repulsion Energy =            680.1059015327545012
-    One-Electron Energy =               -1974.3682410065057411
-    Two-Electron Energy =                 831.7080446278380350
-    Total Energy =                       -462.5542948459130912
+    One-Electron Energy =               -1974.3682410065034674
+    Two-Electron Energy =                 831.7080446278356476
+    Total Energy =                       -462.5542948459132049
 
 Computation Completed
 
@@ -374,14 +375,14 @@ Properties computed using the SCF density matrix
      X:     0.2160      Y:    -0.0530      Z:     0.0410     Total:     0.2262
 
 
-*** tstop() called on skystd01.palmetto.clemson.edu at Wed Jan  5 01:28:11 2022
+*** tstop() called on skystd03.palmetto.clemson.edu at Wed Jan  5 01:28:20 2022
 Module time:
-	user time   =      16.27 seconds =       0.27 minutes
-	system time =       0.56 seconds =       0.01 minutes
+	user time   =      16.34 seconds =       0.27 minutes
+	system time =       0.60 seconds =       0.01 minutes
 	total time  =         17 seconds =       0.28 minutes
 Total time:
-	user time   =      16.27 seconds =       0.27 minutes
-	system time =       0.56 seconds =       0.01 minutes
+	user time   =      16.34 seconds =       0.27 minutes
+	system time =       0.60 seconds =       0.01 minutes
 	total time  =         17 seconds =       0.28 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
@@ -407,8 +408,8 @@ Total time:
         Stored in file 33.
 
 
-*** tstart() called on skystd01.palmetto.clemson.edu
-*** at Wed Jan  5 01:30:33 2022
+*** tstart() called on skystd03.palmetto.clemson.edu
+*** at Wed Jan  5 01:30:36 2022
 
 
 	Wfn Parameters:
@@ -477,3 +478,5 @@ Total time:
 	Size of irrep 0 of tijab amplitudes:      70.308 (MW) /    562.466 (MB)
 	Total:                                    70.308 (MW) /    562.466 (MB)
 
+LIBDPD: Out-of-core algorithm not yet coded for psqr sort.
+Error in: buf4_sort
