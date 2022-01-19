@@ -31,7 +31,6 @@ H 1.08828700 1.79961000 0.52491500
 set scf_type df
 set basis cc-pVDZ
 set reference rhf
-set cachelevel 0
 
 mol.update_geometry()
 mol.symmetrize(1e-3)

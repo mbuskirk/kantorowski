@@ -13,5 +13,5 @@ module purge
 eval "$(conda shell.bash hook)"
 cd $PBS_O_WORKDIR
 conda activate psifour
-export PSI_SCRATCH=$TMPDIR
+export PSI_SCRATCH=/scratch1/maxbuskirk
 psi4 rCl.in rCl.out

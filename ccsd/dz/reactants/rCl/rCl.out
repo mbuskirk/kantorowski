@@ -30,10 +30,10 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Sunday, 12 December 2021 04:28PM
+    Psi4 started on: Tuesday, 18 January 2022 10:40PM
 
-    Process ID: 3778495
-    Host:       skystd14.palmetto.clemson.edu
+    Process ID: 60599
+    Host:       skystd37.palmetto.clemson.edu
     PSIDATADIR: /home/maxbuskirk/.conda/envs/psifour/share/psi4
     Memory:     500.0 MiB
     Threads:    1
@@ -84,11 +84,11 @@ mol.print_out()
 print_variables()
 --------------------------------------------------------------------------
 
-Scratch directory: /local_scratch/pbs.4132542.pbs02/
+Scratch directory: /scratch1/maxbuskirk/
 gradient() will perform analytic gradient computation.
 
-*** tstart() called on skystd14.palmetto.clemson.edu
-*** at Sun Dec 12 16:28:51 2021
+*** tstart() called on skystd37.palmetto.clemson.edu
+*** at Tue Jan 18 22:40:05 2022
 
    => Loading Basis Set <=
 
@@ -231,25 +231,25 @@ gradient() will perform analytic gradient computation.
 
                            Total Energy        Delta E     RMS |[F,P]|
 
-   @DF-RHF iter SAD:  -921.31134273931059   -9.21311e+02   0.00000e+00 
-   @DF-RHF iter   1:  -921.24566228678179    6.56805e-02   2.32637e-03 DIIS
-   @DF-RHF iter   2:  -921.44537983796204   -1.99718e-01   1.12986e-03 DIIS
-   @DF-RHF iter   3:  -921.48747241273611   -4.20926e-02   2.98762e-04 DIIS
-   @DF-RHF iter   4:  -921.49150266066931   -4.03025e-03   1.28385e-04 DIIS
-   @DF-RHF iter   5:  -921.49211439071485   -6.11730e-04   2.27931e-05 DIIS
-   @DF-RHF iter   6:  -921.49214920518341   -3.48145e-05   9.31312e-06 DIIS
-   @DF-RHF iter   7:  -921.49215619225618   -6.98707e-06   3.94094e-06 DIIS
-   @DF-RHF iter   8:  -921.49215841195257   -2.21970e-06   2.01678e-06 DIIS
-   @DF-RHF iter   9:  -921.49215916311107   -7.51158e-07   7.56466e-07 DIIS
-   @DF-RHF iter  10:  -921.49215926236423   -9.92532e-08   2.86897e-07 DIIS
-   @DF-RHF iter  11:  -921.49215927289129   -1.05271e-08   1.07118e-07 DIIS
-   @DF-RHF iter  12:  -921.49215927386672   -9.75433e-10   3.15660e-08 DIIS
-   @DF-RHF iter  13:  -921.49215927394221   -7.54881e-11   9.21281e-09 DIIS
-   @DF-RHF iter  14:  -921.49215927394971   -7.50333e-12   2.33279e-09 DIIS
-   @DF-RHF iter  15:  -921.49215927394971    0.00000e+00   7.67833e-10 DIIS
-   @DF-RHF iter  16:  -921.49215927395119   -1.47793e-12   3.98024e-10 DIIS
-   @DF-RHF iter  17:  -921.49215927394675    4.43379e-12   1.95476e-10 DIIS
-   @DF-RHF iter  18:  -921.49215927394539    1.36424e-12   8.70882e-11 DIIS
+   @DF-RHF iter SAD:  -921.31134274074486   -9.21311e+02   0.00000e+00 
+   @DF-RHF iter   1:  -921.24566228824187    6.56805e-02   2.32637e-03 DIIS
+   @DF-RHF iter   2:  -921.44537983942519   -1.99718e-01   1.12986e-03 DIIS
+   @DF-RHF iter   3:  -921.48747241420097   -4.20926e-02   2.98762e-04 DIIS
+   @DF-RHF iter   4:  -921.49150266213553   -4.03025e-03   1.28385e-04 DIIS
+   @DF-RHF iter   5:  -921.49211439218061   -6.11730e-04   2.27931e-05 DIIS
+   @DF-RHF iter   6:  -921.49214920664838   -3.48145e-05   9.31312e-06 DIIS
+   @DF-RHF iter   7:  -921.49215619372217   -6.98707e-06   3.94094e-06 DIIS
+   @DF-RHF iter   8:  -921.49215841342016   -2.21970e-06   2.01678e-06 DIIS
+   @DF-RHF iter   9:  -921.49215916457626   -7.51156e-07   7.56466e-07 DIIS
+   @DF-RHF iter  10:  -921.49215926383181   -9.92555e-08   2.86897e-07 DIIS
+   @DF-RHF iter  11:  -921.49215927435773   -1.05259e-08   1.07118e-07 DIIS
+   @DF-RHF iter  12:  -921.49215927533010   -9.72364e-10   3.15660e-08 DIIS
+   @DF-RHF iter  13:  -921.49215927541070   -8.06040e-11   9.21281e-09 DIIS
+   @DF-RHF iter  14:  -921.49215927541593   -5.22959e-12   2.33279e-09 DIIS
+   @DF-RHF iter  15:  -921.49215927541684   -9.09495e-13   7.67833e-10 DIIS
+   @DF-RHF iter  16:  -921.49215927541627    5.68434e-13   3.98024e-10 DIIS
+   @DF-RHF iter  17:  -921.49215927541547    7.95808e-13   1.95476e-10 DIIS
+   @DF-RHF iter  18:  -921.49215927541604   -5.68434e-13   8.70879e-11 DIIS
   Energy and wave function converged.
 
 
@@ -352,14 +352,14 @@ gradient() will perform analytic gradient computation.
               A 
     DOCC [    51 ]
 
-  @DF-RHF Final Energy:  -921.49215927394539
+  @DF-RHF Final Energy:  -921.49215927541604
 
    => Energetics <=
 
     Nuclear Repulsion Energy =            828.4977591942139270
-    One-Electron Energy =               -2905.1406940037932145
-    Two-Electron Energy =                1155.1507755356340112
-    Total Energy =                       -921.4921592739453899
+    One-Electron Energy =               -2905.1406940041160851
+    Two-Electron Energy =                1155.1507755344862289
+    Total Energy =                       -921.4921592754160429
 
 Computation Completed
 
@@ -381,15 +381,15 @@ Properties computed using the SCF density matrix
      X:     2.2455      Y:     0.5186      Z:    -0.5843     Total:     2.3775
 
 
-*** tstop() called on skystd14.palmetto.clemson.edu at Sun Dec 12 16:29:13 2021
+*** tstop() called on skystd37.palmetto.clemson.edu at Tue Jan 18 22:40:32 2022
 Module time:
-	user time   =      21.20 seconds =       0.35 minutes
-	system time =       0.70 seconds =       0.01 minutes
-	total time  =         22 seconds =       0.37 minutes
+	user time   =      24.43 seconds =       0.41 minutes
+	system time =       0.69 seconds =       0.01 minutes
+	total time  =         27 seconds =       0.45 minutes
 Total time:
-	user time   =      21.20 seconds =       0.35 minutes
-	system time =       0.70 seconds =       0.01 minutes
-	total time  =         22 seconds =       0.37 minutes
+	user time   =      24.43 seconds =       0.41 minutes
+	system time =       0.69 seconds =       0.01 minutes
+	total time  =         27 seconds =       0.45 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -414,8 +414,8 @@ Total time:
         Stored in file 33.
 
 
-*** tstart() called on skystd14.palmetto.clemson.edu
-*** at Sun Dec 12 16:32:55 2021
+*** tstart() called on skystd37.palmetto.clemson.edu
+*** at Tue Jan 18 22:47:19 2022
 
 
 	Wfn Parameters:

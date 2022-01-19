@@ -30,10 +30,10 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Sunday, 12 December 2021 04:29PM
+    Psi4 started on: Tuesday, 18 January 2022 10:45PM
 
-    Process ID: 3503679
-    Host:       skystd30.palmetto.clemson.edu
+    Process ID: 3089882
+    Host:       skystd38.palmetto.clemson.edu
     PSIDATADIR: /home/maxbuskirk/.conda/envs/psifour/share/psi4
     Memory:     500.0 MiB
     Threads:    1
@@ -85,11 +85,11 @@ mol.print_out()
 print_variables()
 --------------------------------------------------------------------------
 
-Scratch directory: /local_scratch/pbs.4132543.pbs02/
+Scratch directory: /scratch1/maxbuskirk/
 gradient() will perform analytic gradient computation.
 
-*** tstart() called on skystd30.palmetto.clemson.edu
-*** at Sun Dec 12 16:29:06 2021
+*** tstart() called on skystd38.palmetto.clemson.edu
+*** at Tue Jan 18 22:45:13 2022
 
    => Loading Basis Set <=
 
@@ -384,15 +384,15 @@ Properties computed using the SCF density matrix
      X:    -0.0099      Y:     0.8330      Z:    -0.9499     Total:     1.2635
 
 
-*** tstop() called on skystd30.palmetto.clemson.edu at Sun Dec 12 16:29:28 2021
+*** tstop() called on skystd38.palmetto.clemson.edu at Tue Jan 18 22:45:33 2022
 Module time:
-	user time   =      21.30 seconds =       0.36 minutes
-	system time =       0.54 seconds =       0.01 minutes
-	total time  =         22 seconds =       0.37 minutes
+	user time   =      18.72 seconds =       0.31 minutes
+	system time =       0.59 seconds =       0.01 minutes
+	total time  =         20 seconds =       0.33 minutes
 Total time:
-	user time   =      21.30 seconds =       0.36 minutes
-	system time =       0.54 seconds =       0.01 minutes
-	total time  =         22 seconds =       0.37 minutes
+	user time   =      18.72 seconds =       0.31 minutes
+	system time =       0.59 seconds =       0.01 minutes
+	total time  =         20 seconds =       0.33 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -417,8 +417,8 @@ Total time:
         Stored in file 33.
 
 
-*** tstart() called on skystd30.palmetto.clemson.edu
-*** at Sun Dec 12 16:32:24 2021
+*** tstart() called on skystd38.palmetto.clemson.edu
+*** at Tue Jan 18 22:51:30 2022
 
 
 	Wfn Parameters:
@@ -538,8 +538,8 @@ Printing out the relevant lines from the Psithon --> Python processed input file
 !                                                                                  !
 !----------------------------------------------------------------------------------!
 
-    Psi4 stopped on: Sunday, 12 December 2021 04:36PM
-    Psi4 wall time for execution: 0:07:43.16
+    Psi4 stopped on: Tuesday, 18 January 2022 11:05PM
+    Psi4 wall time for execution: 0:20:31.11
 
 *** Psi4 encountered an error. Buy a developer more coffee!
 *** Resources and help at github.com/psi4/psi4.

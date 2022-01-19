@@ -30,10 +30,10 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Sunday, 12 December 2021 04:29PM
+    Psi4 started on: Tuesday, 18 January 2022 11:01PM
 
-    Process ID: 202391
-    Host:       skystd28.palmetto.clemson.edu
+    Process ID: 3053847
+    Host:       skystd25.palmetto.clemson.edu
     PSIDATADIR: /home/maxbuskirk/.conda/envs/psifour/share/psi4
     Memory:     500.0 MiB
     Threads:    1
@@ -88,11 +88,11 @@ mol.print_out()
 print_variables()
 --------------------------------------------------------------------------
 
-Scratch directory: /local_scratch/pbs.4132544.pbs02/
+Scratch directory: /scratch1/maxbuskirk/
 gradient() will perform analytic gradient computation.
 
-*** tstart() called on skystd28.palmetto.clemson.edu
-*** at Sun Dec 12 16:29:32 2021
+*** tstart() called on skystd25.palmetto.clemson.edu
+*** at Tue Jan 18 23:01:39 2022
 
    => Loading Basis Set <=
 
@@ -398,15 +398,15 @@ Properties computed using the SCF density matrix
      X:    -0.2092      Y:     0.8026      Z:    -0.9130     Total:     1.2335
 
 
-*** tstop() called on skystd28.palmetto.clemson.edu at Sun Dec 12 16:30:00 2021
+*** tstop() called on skystd25.palmetto.clemson.edu at Tue Jan 18 23:02:03 2022
 Module time:
-	user time   =      26.86 seconds =       0.45 minutes
-	system time =       0.58 seconds =       0.01 minutes
-	total time  =         28 seconds =       0.47 minutes
+	user time   =      23.05 seconds =       0.38 minutes
+	system time =       0.79 seconds =       0.01 minutes
+	total time  =         24 seconds =       0.40 minutes
 Total time:
-	user time   =      26.86 seconds =       0.45 minutes
-	system time =       0.58 seconds =       0.01 minutes
-	total time  =         28 seconds =       0.47 minutes
+	user time   =      23.05 seconds =       0.38 minutes
+	system time =       0.79 seconds =       0.01 minutes
+	total time  =         24 seconds =       0.40 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -431,8 +431,8 @@ Total time:
         Stored in file 33.
 
 
-*** tstart() called on skystd28.palmetto.clemson.edu
-*** at Sun Dec 12 16:33:50 2021
+*** tstart() called on skystd25.palmetto.clemson.edu
+*** at Tue Jan 18 23:09:46 2022
 
 
 	Wfn Parameters:

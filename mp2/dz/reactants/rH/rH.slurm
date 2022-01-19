@@ -12,5 +12,5 @@
 module purge
 eval "$(conda shell.bash hook)"
 conda activate psifour
-export PSI_SCRATCH=$TMPDIR
+export PSI_SCRATCH=/scratch1/mbuskirk
 psi4 stuff/kantorowski/reactants/rH/rH.in stuff/kantorowski/reactants/rH/rH.out
