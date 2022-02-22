@@ -1,3 +1,5 @@
+memory 62 GB
+
 molecule mol {
 0 1
 C 0.00000000 0.00000000 0.00000000
@@ -31,12 +33,11 @@ H 1.08828700 1.79961000 0.52491500
 set scf_type df
 set basis cc-pVDZ
 set reference rhf
-set cachelevel 0
 
 mol.update_geometry()
 mol.symmetrize(1e-3)
 
-e, wfn = optimize('CCSD', return_wfn=True)
+e, wfn = optimize('CCSD-T', return_wfn=True)
 oeprop(wfn, "MULLIKEN_CHARGES")
 mol.print_out()
 print_variables()

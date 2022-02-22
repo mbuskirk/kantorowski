@@ -30,10 +30,10 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Wednesday, 08 December 2021 08:35PM
+    Psi4 started on: Wednesday, 09 February 2022 03:07PM
 
-    Process ID: 2945525
-    Host:       skystd02.palmetto.clemson.edu
+    Process ID: 1574804
+    Host:       skylm008.palmetto.clemson.edu
     PSIDATADIR: /home/maxbuskirk/.conda/envs/psifour/share/psi4
     Memory:     500.0 MiB
     Threads:    1
@@ -41,6 +41,8 @@
   ==> Input File <==
 
 --------------------------------------------------------------------------
+memory 62 GB
+
 molecule mol {
 0 1
  C     0.355130     0.111221    -1.467412
@@ -82,17 +84,19 @@ set reference rhf
 mol.update_geometry()
 mol.symmetrize(1e-3)
 
-e, wfn = optimize('ccsd', return_wfn=True)
+e, wfn = optimize('CCSD', return_wfn=True)
 oeprop(wfn, "MULLIKEN_CHARGES")
 mol.print_out()
 print_variables()
 --------------------------------------------------------------------------
 
-Scratch directory: /local_scratch/pbs.4122845.pbs02/
+  Memory set to  57.742 GiB by Python driver.
+
+Scratch directory: /scratch1/maxbuskirk/
 gradient() will perform analytic gradient computation.
 
-*** tstart() called on skystd02.palmetto.clemson.edu
-*** at Wed Dec  8 20:35:28 2021
+*** tstart() called on skylm008.palmetto.clemson.edu
+*** at Wed Feb  9 15:07:08 2022
 
    => Loading Basis Set <=
 
@@ -109,7 +113,7 @@ gradient() will perform analytic gradient computation.
                by Justin Turney, Rob Parrish, Andy Simmonett
                           and Daniel G. A. Smith
                               RHF Reference
-                        1 Threads,    500 MiB Core
+                        1 Threads,  59127 MiB Core
          ---------------------------------------------------------
 
   ==> Geometry <==
@@ -196,18 +200,19 @@ gradient() will perform analytic gradient computation.
 
   ==> Integral Setup <==
 
-  ==> DiskDFJK: Density-Fitted J/K Matrices <==
+  DFHelper Memory: AOs need 3.814 GiB; user supplied 43.306 GiB. Using in-core AOs.
 
-    J tasked:                  Yes
-    K tasked:                  Yes
-    wK tasked:                  No
-    OpenMP threads:              1
-    Integrals threads:           1
-    Memory [MiB]:              375
-    Algorithm:                Disk
-    Integral Cache:           NONE
-    Schwarz Cutoff:          1E-12
-    Fitting Condition:       1E-10
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:             44345
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):      24.3138
+    Fitting Condition:        1E-10
 
    => Auxiliary Basis Set <=
 
@@ -239,25 +244,25 @@ gradient() will perform analytic gradient computation.
 
                            Total Energy        Delta E     RMS |[F,P]|
 
-   @DF-RHF iter SAD:  -576.67231887649916   -5.76672e+02   0.00000e+00 
-   @DF-RHF iter   1:  -576.24314713540616    4.29172e-01   1.14028e-03 DIIS
-   @DF-RHF iter   2:  -576.52519229883319   -2.82045e-01   5.40933e-04 DIIS
-   @DF-RHF iter   3:  -576.58601959548969   -6.08273e-02   1.41150e-04 DIIS
-   @DF-RHF iter   4:  -576.59157956991464   -5.55997e-03   5.62573e-05 DIIS
-   @DF-RHF iter   5:  -576.59234085820822   -7.61288e-04   1.18129e-05 DIIS
-   @DF-RHF iter   6:  -576.59238444006246   -4.35819e-05   4.01098e-06 DIIS
-   @DF-RHF iter   7:  -576.59238951769089   -5.07763e-06   1.14571e-06 DIIS
-   @DF-RHF iter   8:  -576.59239014817899   -6.30488e-07   3.97161e-07 DIIS
-   @DF-RHF iter   9:  -576.59239024440467   -9.62257e-08   1.60115e-07 DIIS
-   @DF-RHF iter  10:  -576.59239026190437   -1.74997e-08   7.28781e-08 DIIS
-   @DF-RHF iter  11:  -576.59239026733076   -5.42639e-09   3.73944e-08 DIIS
-   @DF-RHF iter  12:  -576.59239026868681   -1.35606e-09   1.82110e-08 DIIS
-   @DF-RHF iter  13:  -576.59239026905743   -3.70619e-10   5.40546e-09 DIIS
-   @DF-RHF iter  14:  -576.59239026908756   -3.01270e-11   1.78235e-09 DIIS
-   @DF-RHF iter  15:  -576.59239026908722    3.41061e-13   5.57413e-10 DIIS
-   @DF-RHF iter  16:  -576.59239026908892   -1.70530e-12   2.47110e-10 DIIS
-   @DF-RHF iter  17:  -576.59239026908483    4.09273e-12   1.38767e-10 DIIS
-   @DF-RHF iter  18:  -576.59239026909063   -5.79803e-12   6.98903e-11 DIIS
+   @DF-RHF iter SAD:  -576.67231887715491   -5.76672e+02   0.00000e+00 
+   @DF-RHF iter   1:  -576.24314713606032    4.29172e-01   1.14028e-03 DIIS
+   @DF-RHF iter   2:  -576.52519229948507   -2.82045e-01   5.40933e-04 DIIS
+   @DF-RHF iter   3:  -576.58601959613975   -6.08273e-02   1.41150e-04 DIIS
+   @DF-RHF iter   4:  -576.59157957056618   -5.55997e-03   5.62573e-05 DIIS
+   @DF-RHF iter   5:  -576.59234085886328   -7.61288e-04   1.18129e-05 DIIS
+   @DF-RHF iter   6:  -576.59238444071593   -4.35819e-05   4.01098e-06 DIIS
+   @DF-RHF iter   7:  -576.59238951834038   -5.07762e-06   1.14571e-06 DIIS
+   @DF-RHF iter   8:  -576.59239014882667   -6.30486e-07   3.97161e-07 DIIS
+   @DF-RHF iter   9:  -576.59239024505860   -9.62319e-08   1.60115e-07 DIIS
+   @DF-RHF iter  10:  -576.59239026255386   -1.74953e-08   7.28781e-08 DIIS
+   @DF-RHF iter  11:  -576.59239026797900   -5.42514e-09   3.73944e-08 DIIS
+   @DF-RHF iter  12:  -576.59239026933642   -1.35742e-09   1.82110e-08 DIIS
+   @DF-RHF iter  13:  -576.59239026970408   -3.67663e-10   5.40546e-09 DIIS
+   @DF-RHF iter  14:  -576.59239026973523   -3.11502e-11   1.78235e-09 DIIS
+   @DF-RHF iter  15:  -576.59239026973478    4.54747e-13   5.57413e-10 DIIS
+   @DF-RHF iter  16:  -576.59239026973432    4.54747e-13   2.47110e-10 DIIS
+   @DF-RHF iter  17:  -576.59239026973603   -1.70530e-12   1.38767e-10 DIIS
+   @DF-RHF iter  18:  -576.59239026973728   -1.25056e-12   6.98902e-11 DIIS
   Energy and wave function converged.
 
 
@@ -491,14 +496,14 @@ gradient() will perform analytic gradient computation.
               A 
     DOCC [    51 ]
 
-  @DF-RHF Final Energy:  -576.59239026909063
+  @DF-RHF Final Energy:  -576.59239026973728
 
    => Energetics <=
 
     Nuclear Repulsion Energy =            862.2189400929717067
-    One-Electron Energy =               -2493.6484135241271360
-    Two-Electron Energy =                1054.8370831620648005
-    Total Energy =                       -576.5923902690906289
+    One-Electron Energy =               -2493.6484135240225442
+    Two-Electron Energy =                1054.8370831613135579
+    Total Energy =                       -576.5923902697372796
 
 Computation Completed
 
@@ -520,15 +525,15 @@ Properties computed using the SCF density matrix
      X:    -0.1563      Y:     0.7753      Z:    -0.8806     Total:     1.1836
 
 
-*** tstop() called on skystd02.palmetto.clemson.edu at Wed Dec  8 20:38:05 2021
+*** tstop() called on skylm008.palmetto.clemson.edu at Wed Feb  9 15:08:23 2022
 Module time:
-	user time   =     143.58 seconds =       2.39 minutes
-	system time =      12.83 seconds =       0.21 minutes
-	total time  =        157 seconds =       2.62 minutes
+	user time   =      67.83 seconds =       1.13 minutes
+	system time =       2.94 seconds =       0.05 minutes
+	total time  =         75 seconds =       1.25 minutes
 Total time:
-	user time   =     143.58 seconds =       2.39 minutes
-	system time =      12.83 seconds =       0.21 minutes
-	total time  =        157 seconds =       2.62 minutes
+	user time   =      67.83 seconds =       1.13 minutes
+	system time =       2.94 seconds =       0.05 minutes
+	total time  =         75 seconds =       1.25 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
@@ -548,4 +553,78 @@ Total time:
  OEINTS: Overlap, kinetic, potential, dipole, and quadrupole integrals
          stored in file 35.
 
-      Computing two-electron integrals...
+      Computing two-electron integrals...done
+      Computed 8958250277 non-zero two-electron integrals.
+        Stored in file 33.
+
+
+*** tstart() called on skylm008.palmetto.clemson.edu
+*** at Wed Feb  9 16:46:10 2022
+
+
+	Wfn Parameters:
+	--------------------
+	Wavefunction         = CCSD
+	Number of irreps     = 1
+	Number of MOs        = 644
+	Number of active MOs = 644
+	AO-Basis             = NONE
+	Semicanonical        = false
+	Reference            = RHF
+	Print Level          = 1
+
+	IRREP	# MOs	# FZDC	# DOCC	# SOCC	# VIRT	# FZVR
+	-----	-----	------	------	------	------	------
+	 A	   644	    0	    51	    0	    593	    0
+	Transforming integrals...
+	IWL integrals will be deleted.
+	(OO|OO)...
+	Presorting SO-basis two-electron integrals.
+	Sorting File: SO Ints (nn|nn) nbuckets = 6
+	Constructing frozen core operators
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	(OO|OV)...
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	(OO|VV)...
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	(OV|OO)...
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	(OV|OV)...
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	(OV|VV)...
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	(VV|OO)...
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	(VV|OV)...
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	(VV|VV)...
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+	Frozen core energy     =      0.00000000000000
+
+	Size of irrep 0 of <ab|cd> integrals: 123657.019 (MW) / 989256.154 (MB)
+	Total:                                123657.019 (MW) / 989256.154 (MB)
+
+	Size of irrep 0 of <ia|bc> integrals:  10634.921 (MW) /  85079.366 (MB)
+	Total:                                 10634.921 (MW) /  85079.366 (MB)
+
+	Size of irrep 0 of tijab amplitudes:     914.639 (MW) /   7317.112 (MB)
+	Total:                                   914.639 (MW) /   7317.112 (MB)
+

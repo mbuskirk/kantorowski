@@ -1,3 +1,5 @@
+memory 62 GB
+
 molecule mol {
 0 1
  C     1.511290    -0.280966    -0.092593
@@ -39,7 +41,7 @@ set reference rhf
 mol.update_geometry()
 mol.symmetrize(1e-3)
 
-e, wfn = optimize('mp2', return_wfn=True)
+e, wfn = optimize('CCSD-T', return_wfn=True)
 oeprop(wfn, "MULLIKEN_CHARGES")
 mol.print_out()
 print_variables()

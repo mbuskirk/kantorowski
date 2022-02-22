@@ -1,0 +1,17 @@
+Optimizer: Optimization complete!
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=62gb,walltime=60:00:00,ncpus=12
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=31:17:43,mem=60585384kb,walltime=52:35:08,ncpus=12,cpupercent=59,vmem=61285748kb
+ 
+ 

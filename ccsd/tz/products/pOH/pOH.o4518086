@@ -1,0 +1,17 @@
+Error in PSIO_WT_TOCLEN()!
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=62gb,walltime=60:00:00,ncpus=12
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=06:47:26,mem=60859656kb,walltime=15:32:09,ncpus=12,cpupercent=43,vmem=63375632kb
+ 
+ 

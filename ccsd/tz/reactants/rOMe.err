@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/maxbuskirk/.conda/envs/psifour/bin/psi4", line 217, in <module>
-    raise KeyError("The file %s does not exist." % args["input"])
-KeyError: 'The file rOMe.in does not exist.'

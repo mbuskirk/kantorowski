@@ -1,0 +1,72 @@
+=>> PBS: job killed: walltime 216026 exceeded limit 216000
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libgdma.so         000014F64EBD610F  for__signal_handl     Unknown  Unknown
+libpthread-2.28.s  000014F662862B20  Unknown               Unknown  Unknown
+libpthread-2.28.s  000014F662861815  __write               Unknown  Unknown
+core.cpython-39-x  000014F653220133  _ZN3psi4PSIO2rwEm     Unknown  Unknown
+core.cpython-39-x  000014F653220EFC  Unknown               Unknown  Unknown
+core.cpython-39-x  000014F6516E4FDC  _ZN3psi3DPD19file     Unknown  Unknown
+core.cpython-39-x  000014F65160717E  _ZN3psi3DPD18buf4     Unknown  Unknown
+core.cpython-39-x  000014F651609B83  _ZN3psi3DPD12buf4     Unknown  Unknown
+core.cpython-39-x  000014F64FD67206  Unknown               Unknown  Unknown
+core.cpython-39-x  000014F64F8C1280  Unknown               Unknown  Unknown
+core.cpython-39-x  000014F64F85FF9E  Unknown               Unknown  Unknown
+core.cpython-39-x  000014F65391A68B  Unknown               Unknown  Unknown
+core.cpython-39-x  000014F653A1B17B  Unknown               Unknown  Unknown
+core.cpython-39-x  000014F653A1B36B  Unknown               Unknown  Unknown
+core.cpython-39-x  000014F6535FA84F  Unknown               Unknown  Unknown
+python3.9          000055ED940C8BF4  Unknown               Unknown  Unknown
+python3.9          000055ED940C2E1F  _PyObject_MakeTpC     Unknown  Unknown
+python3.9          000055ED94152709  _PyEval_EvalFrame     Unknown  Unknown
+python3.9          000055ED941085E2  Unknown               Unknown  Unknown
+python3.9          000055ED94109147  _PyFunction_Vecto     Unknown  Unknown
+python3.9          000055ED940C2657  _PyObject_Call        Unknown  Unknown
+python3.9          000055ED941502A2  _PyEval_EvalFrame     Unknown  Unknown
+python3.9          000055ED941085E2  Unknown               Unknown  Unknown
+python3.9          000055ED94109147  _PyFunction_Vecto     Unknown  Unknown
+python3.9          000055ED940C2657  _PyObject_Call        Unknown  Unknown
+python3.9          000055ED941502A2  _PyEval_EvalFrame     Unknown  Unknown
+python3.9          000055ED941087DB  Unknown               Unknown  Unknown
+python3.9          000055ED94109147  _PyFunction_Vecto     Unknown  Unknown
+python3.9          000055ED940C2657  _PyObject_Call        Unknown  Unknown
+python3.9          000055ED941502A2  _PyEval_EvalFrame     Unknown  Unknown
+python3.9          000055ED941085E2  Unknown               Unknown  Unknown
+python3.9          000055ED94109147  _PyFunction_Vecto     Unknown  Unknown
+python3.9          000055ED94080A63  Unknown               Unknown  Unknown
+python3.9          000055ED941085E2  Unknown               Unknown  Unknown
+python3.9          000055ED941B7FBC  PyEval_EvalCodeEx     Unknown  Unknown
+python3.9          000055ED9410960B  PyEval_EvalCode       Unknown  Unknown
+python3.9          000055ED941B806B  Unknown               Unknown  Unknown
+python3.9          000055ED941EE5F5  Unknown               Unknown  Unknown
+python3.9          000055ED941F3807  PyRun_StringFlags     Unknown  Unknown
+python3.9          000055ED941F4232  Unknown               Unknown  Unknown
+python3.9          000055ED940E7791  Unknown               Unknown  Unknown
+python3.9          000055ED9408168F  Unknown               Unknown  Unknown
+python3.9          000055ED941085E2  Unknown               Unknown  Unknown
+python3.9          000055ED941B7FBC  PyEval_EvalCodeEx     Unknown  Unknown
+python3.9          000055ED9410960B  PyEval_EvalCode       Unknown  Unknown
+python3.9          000055ED941B806B  Unknown               Unknown  Unknown
+python3.9          000055ED941EE5F5  Unknown               Unknown  Unknown
+python3.9          000055ED94094B45  Unknown               Unknown  Unknown
+python3.9          000055ED941F353F  PyRun_SimpleFileE     Unknown  Unknown
+python3.9          000055ED941F3B5D  Py_RunMain            Unknown  Unknown
+python3.9          000055ED941F3E29  Py_BytesMain          Unknown  Unknown
+libc-2.28.so       000014F6624AE493  __libc_start_main     Unknown  Unknown
+python3.9          000055ED94175D44  Unknown               Unknown  Unknown
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=62gb,walltime=60:00:00,ncpus=12
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=47:37:36,mem=59961688kb,walltime=60:00:37,ncpus=12,cpupercent=79,vmem=61250176kb
+ 
+ 

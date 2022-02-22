@@ -1,0 +1,22 @@
+=>> PBS: job killed: walltime 216024 exceeded limit 216000
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libgdma.so         000014F6BF9C810F  for__signal_handl     Unknown  Unknown
+libpthread-2.28.s  000014F6D3654B20  Unknown               Unknown  Unknown
+libmkl_avx2.so     000014F650709155  mkl_blas_avx2_dge     Unknown  Unknown
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=62gb,walltime=60:00:00,ncpus=12
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=46:38:43,mem=45048696kb,walltime=60:00:35,ncpus=12,cpupercent=77,vmem=45777632kb
+ 
+ 

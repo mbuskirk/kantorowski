@@ -1,0 +1,23 @@
+ 181 displacements needed.
+ 1 2 3 4 5 6=>> PBS: job killed: walltime 216017 exceeded limit 216000
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libgdma.so         000014C839F2A10F  for__signal_handl     Unknown  Unknown
+libpthread-2.28.s  000014C84DBB8B20  Unknown               Unknown  Unknown
+libmkl_avx512.so   000014C7CA59C7FF  mkl_blas_avx512_d     Unknown  Unknown
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=62gb,walltime=60:00:00,ncpus=12
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cput=36:09:49,mem=60388484kb,walltime=60:00:28,ncpus=12,cpupercent=60,vmem=62581300kb
+ 
+ 
